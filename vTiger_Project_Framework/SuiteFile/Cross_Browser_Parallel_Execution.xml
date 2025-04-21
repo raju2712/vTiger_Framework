@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="2" parallel="tests" name="Suite">
-	<test thread-count="5" name="Test">
+	<test name="Test-1">
 		<parameter name="BROWSER" value="edge"></parameter>    <!-- This line we have to add b/w test and classes tag -->
 		<classes>
-			<class
-				name="TestNG.practice.crossBrowserParrelExecution.CreateContactWithDateAndOrganizationTest" />
-			<class
-				name="TestNG.practice.crossBrowserParrelExecution.CreateOrganizationWithPhoneNumberAndIndustry" />
+			<class name="TestNG.practice.crossBrowserParrelExecution.CreateContactWithDateAndOrganizationTest" />
+			<class name="TestNG.practice.crossBrowserParrelExecution.CreateOrganizationWithPhoneNumberAndIndustry" />
 		</classes>
-	</test> <!--
-	Test -->
+	</test> 
 
-	<test thread-count="5" name="Test" parallel="true">
+	<test name="Test-2" >
 		<parameter name="BROWSER" value="chrome"></parameter>
 		<classes>
-			<class
-				name="TestNG.practice.crossBrowserParrelExecution.CreateContactWithDateAndOrganizationTest" />
-			<class
-				name="TestNG.practice.crossBrowserParrelExecution.CreateOrganizationWithPhoneNumberAndIndustry" />
+			<class name="TestNG.practice.crossBrowserParrelExecution.CreateContactWithDateAndOrganizationTest" />
+			<class name="TestNG.practice.crossBrowserParrelExecution.CreateOrganizationWithPhoneNumberAndIndustry" />
 		</classes>
-	</test> <!--
-	Test -->
-</suite> <!--
-Suite -->
+	</test> 
+</suite>

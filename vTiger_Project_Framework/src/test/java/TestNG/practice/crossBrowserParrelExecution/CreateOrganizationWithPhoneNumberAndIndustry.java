@@ -3,6 +3,7 @@ package TestNG.practice.crossBrowserParrelExecution;
 import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import TestNG.baseClass.BaseClass;
@@ -10,8 +11,8 @@ import objectRepositoryUtility.CreatingNewOrganizationPage;
 import objectRepositoryUtility.HomePage;
 import objectRepositoryUtility.OrganizationInfoPage;
 import objectRepositoryUtility.OrganizationsPage;
-
-public class CreateOrganizationWithPhoneNumberAndIndustry extends BaseClass {
+@Parameters
+public class CreateOrganizationWithPhoneNumberAndIndustry extends BaseClassForCrossBrowserParrallelExecution {
 
 	@Test(groups = "RT")
 	public void createOrganizationTest() throws Throwable {

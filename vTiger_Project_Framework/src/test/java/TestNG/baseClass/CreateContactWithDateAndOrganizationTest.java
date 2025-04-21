@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.By;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import objectRepositoryUtility.ContactInfoPage;
@@ -14,7 +15,7 @@ import objectRepositoryUtility.CreatingNewOrganizationPage;
 import objectRepositoryUtility.HomePage;
 import objectRepositoryUtility.OrganizationInfoPage;
 import objectRepositoryUtility.OrganizationsPage;
-
+@Listeners
 public class CreateContactWithDateAndOrganizationTest extends BaseClass {
 
 	@Test(groups = "ST")

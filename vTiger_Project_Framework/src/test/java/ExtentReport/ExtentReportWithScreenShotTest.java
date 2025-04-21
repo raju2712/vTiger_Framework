@@ -31,9 +31,9 @@ public class ExtentReportWithScreenShotTest extends BaseClass {
 		if ("ICICII".equals("ICICI")) {
 			test.log(Status.PASS, "Contact Created");
 		} else {
-        test.addScreenCaptureFromBase64String(temp,"Errorfile");
+            test.addScreenCaptureFromBase64String(temp,"Errorfile");
         }
-		driver.close();
+		//driver.close();
 	}
 
 }

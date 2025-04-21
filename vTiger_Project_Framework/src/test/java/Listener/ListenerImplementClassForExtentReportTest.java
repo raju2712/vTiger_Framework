@@ -20,7 +20,7 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 
 import genericUtilities.UtilityClassObject;
 
-public class ListenerImplementClassForExtentReportTest implements ITestListener , ISuiteListener{
+public class ListenerImplementClassForExtentReportTest implements ITestListener , ISuiteListener {
 
 	public ExtentSparkReporter esr;
 	public static ExtentReports report;

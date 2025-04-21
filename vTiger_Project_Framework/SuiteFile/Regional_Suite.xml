@@ -3,20 +3,19 @@
 <suite name="Suite">
 	<test thread-count="5" name="Test">
 
-		<classes>
-			<class
-				name="TestNG.practice.CreateContactWithDateAndOrganizationTest">
+	   <classes>
+			<class name="TestNG.practice.CreateContactWithDateAndOrganizationTest">
 				<methods>
 					<include name="createContactWithDate" />
 				</methods>
 			</class>
-			<class
-				name="TestNG.practice.CreateOrganizationWithPhoneNumberAndIndustry">
+			
+			<class name="TestNG.practice.CreateOrganizationWithPhoneNumberAndIndustry">
 				<methods>
 					<include name="CreateOrganizationWithIndustry" />
 				</methods>
 			</class>
-		</classes>
+	   </classes>
 
 	</test> <!--
 	Test -->

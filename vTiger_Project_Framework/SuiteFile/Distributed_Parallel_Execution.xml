@@ -11,16 +11,15 @@
 
 	<test name="Test-2">
 		<classes>
-			<class
-				name="TestNG.practice.CreateContactWithDateAndOrganizationTest" />
+			<class name="TestNG.practice.CreateContactWithDateAndOrganizationTest" />
 			<class name="TestNG.practice.CreateOrganizationTest" />
 		</classes>
 	</test>
 
 	<test name="Test-3">
 		<classes>
-			<class
-				name="TestNG.practice.CreateOrganizationWithPhoneNumberAndIndustry" />
+		    <class name="TestNG.practice.CreateContactWithDateTest" />
+			<class name="TestNG.practice.CreateOrganizationWithPhoneNumberAndIndustry" />
 		</classes>
 	</test>
 

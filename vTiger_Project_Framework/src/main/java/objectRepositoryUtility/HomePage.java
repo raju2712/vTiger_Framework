@@ -8,40 +8,36 @@ import org.openqa.selenium.support.PageFactory;
 import genericUtilities.WebDriverUtility;
 
 public class HomePage {
-	
+
 	WebDriverUtility wutil = new WebDriverUtility();
-	
-	 WebDriver driver;
-	
+
+	WebDriver driver;
+
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 
-	
-			
-			@FindBy(linkText = "Contacts")
-			private WebElement contactsLink;
-			
+	@FindBy(linkText = "Contacts")
+	private WebElement contactsLink;
+
 	public WebElement getContactsLink() {
-				return contactsLink;
-			}
+		return contactsLink;
+	}
 
-
-
-	@FindBy(linkText="Organizations")
+	@FindBy(linkText = "Organizations")
 	private WebElement organizationsLink;
-	
+
 	@FindBy(xpath = "//img[@src='themes/softed/images/user.PNG']")
 	private WebElement profileIcon;
-	
+
 	@FindBy(linkText = "Sign Out")
 	private WebElement signoutLink;
-	
-	@FindBy(linkText="Campaigns")
+
+	@FindBy(linkText = "Campaigns")
 	private WebElement campaignsLink;
-	
-	@FindBy(linkText="More")
+
+	@FindBy(linkText = "More")
 	private WebElement moreLink;
 
 	public WebElement getSignoutLink() {
@@ -63,15 +59,15 @@ public class HomePage {
 	public WebElement getProfileIcon() {
 		return profileIcon;
 	}
-	
+
 	public void gavigateToCampaignPage() {
 		wutil.toMouseHover(driver, moreLink);
 		campaignsLink.click();
 	}
-	
+
 	public void toSignout() {
 		wutil.toMouseHover(driver, profileIcon);
 		signoutLink.click();
 	}
-	
+
 }

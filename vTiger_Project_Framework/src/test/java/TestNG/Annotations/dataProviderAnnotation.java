@@ -18,11 +18,11 @@ public class dataProviderAnnotation {
 	public Object[][] getData() {
 		Object[][] objArr = new Object[3][2];   //Here 3 indicates How many times we want to execute and 2 indicates
                                           		//How many arguments we have to pass
-		objArr[0][0] = "Raju";                
-		objArr[0][1] = "Ramesh";
+		objArr[0][0] = "Ramesh";                
+		objArr[0][1] = "Vanitha";
 		
 		objArr[1][0] = "Appu";
-		objArr[1][1] = "Vanitha";
+		objArr[1][1] = "Raju";
 		
 		objArr[2][0] = "Kasi";
 		objArr[2][1] = "Dhanam";

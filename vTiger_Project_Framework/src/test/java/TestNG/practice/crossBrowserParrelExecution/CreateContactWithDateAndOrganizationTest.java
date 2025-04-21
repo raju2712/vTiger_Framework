@@ -16,8 +16,8 @@ import objectRepositoryUtility.CreatingNewOrganizationPage;
 import objectRepositoryUtility.HomePage;
 import objectRepositoryUtility.OrganizationInfoPage;
 import objectRepositoryUtility.OrganizationsPage;
-
-public class CreateContactWithDateAndOrganizationTest extends BaseClass {
+@Parameters
+public class CreateContactWithDateAndOrganizationTest extends BaseClassForCrossBrowserParrallelExecution {
 
 	@Test(groups = "ST")
 	public void createContactTest() throws Throwable {

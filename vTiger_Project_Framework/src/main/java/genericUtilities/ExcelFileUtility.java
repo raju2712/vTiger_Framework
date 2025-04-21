@@ -3,6 +3,7 @@ package genericUtilities;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Date;
 
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
@@ -23,11 +24,10 @@ public class ExcelFileUtility {
 		return value;
 	}
 	
-	public static void main(String[] args, String sheetname, int row, int cell) throws Throwable {
+	public static void main(String[] args, String sheetname, int row, int cell, Date value) throws Throwable {
 		FileInputStream fis = new FileInputStream(".\\src\\test\\resources\\testData.xlsx");
 		Workbook wb = WorkbookFactory.create(fis);
-		 wb.getSheet(sheetname).getRow(row).getCell(cell);
-		 
+		 wb.getSheet(sheetname).getRow(row).createCell(cell).setCellValue(value);
 		 FileOutputStream fos = new FileOutputStream(".\\src\\test\\resources\\testData.xlsx");
 		 wb.write(fos);
 	}

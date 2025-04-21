@@ -11,10 +11,8 @@
 		</groups>
 
 		<classes>
-			<class
-				name="TestNG.practice.CreateContactWithDateAndOrganizationTest" />
-			<class
-				name="TestNG.practice.CreateOrganizationWithPhoneNumberAndIndustry" />
+			<class name="TestNG.practice.CreateContactWithDateAndOrganizationTest" />
+			<class name="TestNG.practice.CreateOrganizationWithPhoneNumberAndIndustry" />
 		</classes>
 	</test> <!--
 	Test -->
